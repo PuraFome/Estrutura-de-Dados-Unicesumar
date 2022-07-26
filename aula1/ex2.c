@@ -13,7 +13,7 @@ int main(void) {
 
     printf("Address of caracter %p\n", &p);
 
-    printf("Velue pointed to by p: %p", *p);
+    printf("Velue pointed to by p: %c", *p);
 
 
 }
