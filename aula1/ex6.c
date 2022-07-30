@@ -10,13 +10,10 @@ void multTwo(int num[]){
 }
 
 void printerVector(int vet[], int tam){
+    printf("   | value |  address \n");
     
-
-    printf("value of tam: %d \n",tam);
-
     for(int i=0; i< 10; i++){
-          printf("teste\n");
-          printf("%d - ",*(vet+i));
+          printf("   |   %d   |  %p\n",*(vet+i) , (vet+i));
         }
 
 }
@@ -28,6 +25,7 @@ int main(void){
   
     printerVector(vet, tam);
     multTwo(vet);
+    printf("----------------------------\n");
     printerVector(vet, tam);
 
 }
